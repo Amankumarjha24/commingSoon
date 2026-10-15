@@ -1,0 +1,126 @@
+.container {
+  max-width: 54rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 3.5rem 1.5rem;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #78716c;
+  margin-bottom: 1.25rem;
+}
+
+:global(.dark) .breadcrumb {
+  color: #a8a29e;
+}
+
+.breadcrumbLink {
+  transition: all 150ms;
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbLink:hover {
+  color: #f97316;
+}
+
+.breadcrumbActive {
+  color: #1c1917;
+}
+
+:global(.dark) .breadcrumbActive {
+  color: #e7e5e4;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  border: 1px solid #f0ece3;
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.05);
+}
+
+:global(.dark) .card {
+  background-color: #1c1917;
+  border-color: #292524;
+}
+
+@media (min-width: 640px) {
+  .card {
+    padding: 2.5rem;
+  }
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #1c1917;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.5rem;
+}
+
+:global(.dark) .title {
+  color: #f5f5f4;
+}
+
+.updatedDate {
+  font-size: 0.8125rem;
+  color: #78716c;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0ece3;
+}
+
+:global(.dark) .updatedDate {
+  color: #a8a29e;
+  border-color: #292524;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #57534e;
+}
+
+:global(.dark) .content {
+  color: #d6d3d1;
+}
+
+.sectionTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 0.5rem;
+}
+
+:global(.dark) .sectionTitle {
+  color: #f5f5f4;
+}
+
+.highlightBox {
+  padding: 1rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: #fafaf9;
+  border-left: 4px solid #f97316;
+  font-size: 0.875rem;
+  color: #44403c;
+}
+
+:global(.dark) .highlightBox {
+  background-color: #141210;
+  color: #d6d3d1;
+}

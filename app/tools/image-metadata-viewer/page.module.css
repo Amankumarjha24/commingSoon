@@ -1,0 +1,245 @@
+.container {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 3.5rem 1.5rem;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #78716c;
+  margin-bottom: 1rem;
+}
+
+:global(.dark) .breadcrumb {
+  color: #a8a29e;
+}
+
+.breadcrumbLink {
+  transition: color 150ms;
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbLink:hover {
+  color: #f97316;
+}
+
+.breadcrumbActive {
+  color: #1c1917;
+}
+
+:global(.dark) .breadcrumbActive {
+  color: #e7e5e4;
+}
+
+.headerContainer {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1c1917;
+  letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 1.875rem;
+  }
+}
+
+:global(.dark) .title {
+  color: #f5f5f4;
+}
+
+.iconWrapper {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.85rem;
+  background-color: #cffafe;
+  color: #0891b2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+:global(.dark) .iconWrapper {
+  background-color: rgba(8, 145, 178, 0.3);
+  color: #22d3ee;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #78716c;
+  margin-top: 0.35rem;
+}
+
+:global(.dark) .subtitle {
+  color: #a8a29e;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid #f0ece3;
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+:global(.dark) .card {
+  background-color: #1c1917;
+  border-color: #292524;
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #0891b2;
+  border-radius: 1.25rem;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ecfeff;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:global(.dark) .dropzone {
+  background-color: rgba(8, 145, 178, 0.15);
+  border-color: #0e7490;
+}
+
+.dropzone:hover {
+  background-color: #cffafe;
+  border-color: #06b6d4;
+  transform: translateY(-1px);
+}
+
+:global(.dark) .dropzone:hover {
+  background-color: rgba(8, 145, 178, 0.25);
+}
+
+.dropIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #0891b2;
+  margin-bottom: 0.85rem;
+  transition: transform 200ms ease;
+}
+
+:global(.dark) .dropIcon {
+  color: #22d3ee;
+}
+
+.dropzone:hover .dropIcon {
+  transform: scale(1.08);
+}
+
+.dropText {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 0.25rem;
+}
+
+:global(.dark) .dropText {
+  color: #f5f5f4;
+}
+
+.dropSub {
+  font-size: 0.75rem;
+  color: #78716c;
+}
+
+:global(.dark) .dropSub {
+  color: #a8a29e;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.metaCard {
+  padding: 1rem;
+  border-radius: 0.85rem;
+  background-color: #fafaf9;
+  border: 1px solid #e7e5e4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+:global(.dark) .metaCard {
+  background-color: #141210;
+  border-color: #292524;
+}
+
+.metaKey {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #78716c;
+}
+
+:global(.dark) .metaKey {
+  color: #a8a29e;
+}
+
+.metaVal {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1c1917;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+:global(.dark) .metaVal {
+  color: #f5f5f4;
+}
+
+.stripBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #0891b2;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(8, 145, 178, 0.3);
+  transition: all 150ms;
+}
+
+.stripBtn:hover {
+  background-color: #0e7490;
+  transform: translateY(-1px);
+}

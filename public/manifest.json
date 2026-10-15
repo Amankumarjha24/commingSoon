@@ -1,0 +1,17 @@
+{
+  "name": "ToolsforTools - Free Online Web Utilities",
+  "short_name": "ToolsforTools",
+  "description": "Ultra-fast, 100% private Photopea Photo Editor, PDF Tools, Financial Calculators, and Media Utilities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#4F46E5",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "64x64"
+    }
+  ]
+}

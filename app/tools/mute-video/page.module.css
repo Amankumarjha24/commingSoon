@@ -1,0 +1,334 @@
+.container {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 3.5rem 1.5rem;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #78716c;
+  margin-bottom: 1rem;
+}
+
+:global(.dark) .breadcrumb {
+  color: #a8a29e;
+}
+
+.breadcrumbLink {
+  transition: color 150ms;
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbLink:hover {
+  color: #f97316;
+}
+
+.breadcrumbActive {
+  color: #1c1917;
+}
+
+:global(.dark) .breadcrumbActive {
+  color: #e7e5e4;
+}
+
+.headerContainer {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1c1917;
+  letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 1.875rem;
+  }
+}
+
+:global(.dark) .title {
+  color: #f5f5f4;
+}
+
+.iconWrapper {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.85rem;
+  background-color: #ecfdf5;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+:global(.dark) .iconWrapper {
+  background-color: rgba(6, 78, 59, 0.3);
+  color: #34d399;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #78716c;
+  margin-top: 0.35rem;
+}
+
+:global(.dark) .subtitle {
+  color: #a8a29e;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid #f0ece3;
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+:global(.dark) .card {
+  background-color: #1c1917;
+  border-color: #292524;
+}
+
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #059669;
+  border-radius: 1.25rem;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #ecfdf5;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:global(.dark) .dropzone {
+  background-color: rgba(6, 78, 59, 0.15);
+  border-color: #047857;
+}
+
+.dropzone:hover {
+  background-color: #d1fae5;
+  border-color: #10b981;
+  transform: translateY(-1px);
+}
+
+:global(.dark) .dropzone:hover {
+  background-color: rgba(6, 78, 59, 0.25);
+}
+
+.dropIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #059669;
+  margin-bottom: 0.85rem;
+  transition: transform 200ms ease;
+}
+
+:global(.dark) .dropIcon {
+  color: #34d399;
+}
+
+.dropzone:hover .dropIcon {
+  transform: scale(1.08);
+}
+
+.dropText {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 0.25rem;
+}
+
+:global(.dark) .dropText {
+  color: #f5f5f4;
+}
+
+.dropSub {
+  font-size: 0.75rem;
+  color: #78716c;
+}
+
+:global(.dark) .dropSub {
+  color: #a8a29e;
+}
+
+.scannerContainer {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background: #fdfcfa;
+  border: 1px solid #f0ece3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+:global(.dark) .scannerContainer {
+  background: #141210;
+  border-color: #292524;
+}
+
+.scannerBeam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #10b981, #3b82f6, #8b5cf6, #ec4899);
+  box-shadow: 0 0 18px 4px rgba(16, 185, 129, 0.85), 0 0 35px 8px rgba(59, 130, 246, 0.6);
+  z-index: 30;
+  animation: scanLaser 1.8s ease-in-out infinite alternate;
+}
+
+.scannerGlow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.35), transparent);
+  pointer-events: none;
+  z-index: 29;
+  animation: scanLaserGlow 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes scanLaser {
+  0% { top: 0%; }
+  100% { top: 98%; }
+}
+
+@keyframes scanLaserGlow {
+  0% { top: 0%; }
+  100% { top: calc(98% - 70px); }
+}
+
+.scanningBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #059669, #3b82f6);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+  margin-bottom: 1.25rem;
+  z-index: 31;
+}
+
+.videoPlayer {
+  width: 100%;
+  max-width: 38rem;
+  border-radius: 1rem;
+  background-color: #000000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.muteBtn {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.85rem;
+  border-radius: 0.75rem;
+  background-color: #059669;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25);
+  transition: all 150ms;
+}
+
+.muteBtn:hover:not(:disabled) {
+  background-color: #047857;
+  transform: translateY(-1px);
+}
+
+.muteBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.resultBox {
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+:global(.dark) .resultBox {
+  background-color: rgba(6, 78, 59, 0.25);
+  border-color: #047857;
+}
+
+.resultTitle {
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: #065f46;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+:global(.dark) .resultTitle {
+  color: #34d399;
+}
+
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #059669;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.3);
+  transition: all 150ms;
+}
+
+.downloadBtn:hover {
+  background-color: #047857;
+}

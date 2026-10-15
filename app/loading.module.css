@@ -1,0 +1,112 @@
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
+  padding: 2rem;
+  gap: 1.5rem;
+  animation: fadeIn 200ms ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.logoWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: logoPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 16px rgba(0, 82, 255, 0.25));
+  }
+  50% {
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 28px rgba(0, 82, 255, 0.45));
+  }
+}
+
+:global(.dark) .logoWrapper {
+  animation: darkLogoPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes darkLogoPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 16px rgba(249, 115, 22, 0.25));
+  }
+  50% {
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 28px rgba(249, 115, 22, 0.45));
+  }
+}
+
+.logoLight {
+  display: block;
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.logoDark {
+  display: none;
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+:global(.dark) .logoLight {
+  display: none;
+}
+
+:global(.dark) .logoDark {
+  display: block;
+}
+
+.spinnerRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.spinner {
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 2.5px solid #e2e8f0;
+  border-top-color: #0052ff;
+  border-radius: 50%;
+  animation: spin 750ms linear infinite;
+}
+
+:global(.dark) .spinner {
+  border-color: #292524;
+  border-top-color: #f97316;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #475569;
+  letter-spacing: -0.01em;
+}
+
+:global(.dark) .loadingText {
+  color: #a8a29e;
+}

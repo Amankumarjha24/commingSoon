@@ -1,0 +1,367 @@
+.container {
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5rem 1rem 5rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 3.5rem 1.5rem 6rem;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #78716c;
+  margin-bottom: 2rem;
+}
+
+:global(.dark) .breadcrumb {
+  color: #a8a29e;
+}
+
+.breadcrumbLink {
+  text-decoration: none;
+  color: inherit;
+  transition: color 150ms;
+}
+
+.breadcrumbLink:hover {
+  color: #f97316;
+}
+
+.breadcrumbSep {
+  color: #d6d3d1;
+}
+
+:global(.dark) .breadcrumbSep {
+  color: #44403c;
+}
+
+.breadcrumbActive {
+  color: #1c1917;
+  max-width: 280px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+:global(.dark) .breadcrumbActive {
+  color: #f5f5f4;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.categoryPill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+:global(.dark) .categoryPill {
+  background: rgba(37, 99, 235, 0.2);
+  color: #93c5fd;
+}
+
+.title {
+  font-size: 2.15rem;
+  font-weight: 850;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: #1c1917;
+  margin-bottom: 1.25rem;
+}
+
+:global(.dark) .title {
+  color: #fafaf9;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.75rem;
+  }
+}
+
+.authorMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.authorAvatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: 0.9375rem;
+  font-weight: 750;
+  color: #1c1917;
+}
+
+:global(.dark) .authorName {
+  color: #f5f5f4;
+}
+
+.publishDetails {
+  font-size: 0.78125rem;
+  color: #78716c;
+}
+
+:global(.dark) .publishDetails {
+  color: #a8a29e;
+}
+
+.coverWrap {
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+  border: 1px solid #f0ece3;
+}
+
+:global(.dark) .coverWrap {
+  border-color: #292524;
+}
+
+.coverImg {
+  width: 100%;
+  height: auto;
+  max-height: 440px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Rendered Article Styling */
+.articleBody {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: #292524;
+}
+
+:global(.dark) .articleBody {
+  color: #d6d3d1;
+}
+
+.articleBody :global(.heading1) {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #1c1917;
+  letter-spacing: -0.02em;
+}
+
+.articleBody :global(.heading2) {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-top: 2.25rem;
+  margin-bottom: 0.85rem;
+  color: #1c1917;
+  letter-spacing: -0.015em;
+  border-bottom: 1px solid #f5f5f4;
+  padding-bottom: 0.4rem;
+}
+
+.articleBody :global(.heading3) {
+  font-size: 1.25rem;
+  font-weight: 750;
+  margin-top: 1.75rem;
+  margin-bottom: 0.65rem;
+  color: #1c1917;
+}
+
+:global(.dark) .articleBody :global(.heading1),
+:global(.dark) .articleBody :global(.heading2),
+:global(.dark) .articleBody :global(.heading3) {
+  color: #f5f5f4;
+  border-bottom-color: #292524;
+}
+
+.articleBody :global(.paragraph) {
+  margin-bottom: 1.35rem;
+}
+
+.articleBody :global(strong) {
+  color: #1c1917;
+  font-weight: 750;
+}
+
+:global(.dark) .articleBody :global(strong) {
+  color: #f5f5f4;
+}
+
+.articleBody :global(.divider) {
+  border: none;
+  border-top: 1px solid #e7e5e4;
+  margin: 2.5rem 0;
+}
+
+:global(.dark) .articleBody :global(.divider) {
+  border-top-color: #292524;
+}
+
+.articleBody :global(.listItem) {
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+
+.articleBody :global(.contentLink) {
+  color: #ea580c;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 150ms;
+}
+
+:global(.dark) .articleBody :global(.contentLink) {
+  color: #fb923c;
+}
+
+.articleBody :global(.contentLink:hover) {
+  color: #c2410c;
+}
+
+.articleBody :global(.codeBlock) {
+  background: #18181b;
+  color: #f4f4f5;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.875rem;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  margin: 1.5rem 0;
+  border: 1px solid #27272a;
+}
+
+.articleBody :global(.inlineCode) {
+  background: #f5f5f4;
+  color: #c2410c;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.35rem;
+  font-size: 0.875em;
+  font-family: monospace;
+}
+
+:global(.dark) .articleBody :global(.inlineCode) {
+  background: #27272a;
+  color: #fb923c;
+}
+
+/* Article Footer */
+.articleFooter {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e7e5e4;
+}
+
+:global(.dark) .articleFooter {
+  border-top-color: #292524;
+}
+
+.shareBanner {
+  background: linear-gradient(135deg, #fff7ed, #fed7aa);
+  border: 1px solid #fdba74;
+  border-radius: 1.25rem;
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+:global(.dark) .shareBanner {
+  background: linear-gradient(135deg, #1c1917, #292524);
+  border-color: #44403c;
+}
+
+.shareText h4 {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: #9a3412;
+  margin-bottom: 0.25rem;
+}
+
+:global(.dark) .shareText h4 {
+  color: #fdba74;
+}
+
+.shareText p {
+  font-size: 0.875rem;
+  color: #78716c;
+}
+
+:global(.dark) .shareText p {
+  color: #a8a29e;
+}
+
+.exploreToolsBtn {
+  background: #ea580c;
+  color: #ffffff;
+  padding: 0.75rem 1.4rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 750;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.25);
+  transition: all 150ms;
+}
+
+.exploreToolsBtn:hover {
+  background: #c2410c;
+  transform: translateY(-1px);
+}
+
+.backLinkWrap {
+  text-align: center;
+}
+
+.backLink {
+  display: inline-block;
+  color: #78716c;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 150ms;
+}
+
+.backLink:hover {
+  color: #f97316;
+}
+
+:global(.dark) .backLink {
+  color: #a8a29e;
+}

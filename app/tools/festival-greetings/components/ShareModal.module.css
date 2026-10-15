@@ -1,0 +1,374 @@
+.container {
+  width: 100%;
+  max-width: 36rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.modal {
+  background-color: rgba(24, 26, 46, 0.95);
+  border: 2px solid rgba(236, 72, 153, 0.4);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(24px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .modal {
+    padding: 2rem;
+  }
+}
+
+.headerIconContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.giftIconOuter {
+  width: 5rem;
+  height: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 9999px;
+  background-image: linear-gradient(to top right, #ec4899, #fbbf24);
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.3), 0 4px 6px -4px rgba(236, 72, 153, 0.3);
+  animation: cartoonWobble 2s infinite ease-in-out;
+}
+
+.giftIconInner {
+  width: 100%;
+  height: 100%;
+  background-color: #181a2e;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.875rem;
+}
+
+.sparklesIcon {
+  position: absolute;
+  top: -0.25rem;
+  right: -0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #fcd34d;
+  animation: spinSlow 3s linear infinite;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: 700;
+  color: white;
+}
+@media (min-width: 640px) {
+  .title {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.subtitle {
+  color: rgba(249, 168, 212, 0.9);
+  font-size: 0.875rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin-top: 0.25rem;
+}
+
+.recipientName {
+  font-weight: 700;
+  color: white;
+  text-decoration-line: underline;
+  text-decoration-color: #ec4899;
+}
+
+.countdownContainer {
+  background-color: rgba(15, 17, 30, 0.9);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 1rem;
+  padding: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: #fcd34d;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.clockIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  color: #fbbf24;
+}
+
+.countdownText {
+  font-size: 0.75rem;
+}
+@media (min-width: 640px) {
+  .countdownText {
+    font-size: 0.875rem;
+  }
+}
+
+.validFor {
+  color: #9ca3af;
+}
+
+.timeText {
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fcd34d;
+  letter-spacing: 0.05em;
+}
+
+.whatsappBtn {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #10b981, #16a34a);
+  color: white;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border: 2px solid rgba(110, 231, 183, 0.4);
+  cursor: pointer;
+  box-shadow: 0 20px 25px -5px rgba(20, 83, 45, 0.3), 0 8px 10px -6px rgba(20, 83, 45, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.whatsappBtn:hover {
+  background-image: linear-gradient(to right, #34d399, #22c55e);
+  transform: translateY(-2px);
+  box-shadow: 0 25px 30px -5px rgba(20, 83, 45, 0.4);
+}
+
+.shareIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  animation: bounceGentle 2s infinite ease-in-out;
+}
+
+.copyBoxWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.copyLabel {
+  display: block;
+  text-align: left;
+  font-size: 0.75rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #9ca3af;
+}
+
+.copyInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem;
+  background-color: #0b0d18;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 1rem;
+}
+
+.copyInput {
+  flex: 1;
+  background-color: transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  color: #d1d5db;
+  font-family: monospace;
+  outline: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: none;
+}
+
+.copyBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  transition: all 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  cursor: pointer;
+  border: none;
+}
+.copyBtnCopied {
+  background-color: #10b981;
+  color: white;
+}
+.copyBtnNormal {
+  background-color: #ec4899;
+  color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.copyBtnNormal:hover {
+  background-color: #f472b6;
+}
+
+.copyBtnIcon {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.secondaryActions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+.qrBtn {
+  padding: 0.625rem 0.75rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+.qrBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.qrIcon {
+  width: 1rem;
+  height: 1rem;
+  color: #c084fc;
+}
+
+.openBtn {
+  padding: 0.625rem 0.75rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(to right, #9333ea, #db2777);
+  border: 1px solid rgba(244, 114, 182, 0.4);
+  color: white;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.15s ease;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.openBtn:hover {
+  background-image: linear-gradient(to right, #a855f7, #ec4899);
+}
+
+.btnIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.qrContainer {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  display: inline-block;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease-out;
+}
+
+.qrImage {
+  width: 11rem;
+  height: 11rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+}
+
+.qrText {
+  color: #374151;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.backContainer {
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.backBtn {
+  color: #9ca3af;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: color 0.15s ease;
+  background: transparent;
+  border: none;
+}
+.backBtn:hover {
+  color: #f9a8d4;
+}
+
+.backIcon {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+@keyframes cartoonWobble {
+  0%, 100% { transform: rotate(-3deg) scale(1); }
+  50% { transform: rotate(3deg) scale(1.05); }
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .5; transform: scale(1.1); }
+}
+
+@keyframes bounceGentle {
+  0%, 100% { transform: translateY(-5%); }
+  50% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

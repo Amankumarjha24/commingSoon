@@ -1,0 +1,461 @@
+.container {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #78716c;
+  margin-bottom: 1.25rem;
+}
+
+:global(.dark) .breadcrumb {
+  color: #a8a29e;
+}
+
+.breadcrumbLink {
+  transition: all 150ms;
+  text-decoration: none;
+  color: inherit;
+}
+
+.breadcrumbLink:hover {
+  color: #f97316;
+}
+
+.breadcrumbActive {
+  color: #1c1917;
+}
+
+:global(.dark) .breadcrumbActive {
+  color: #e7e5e4;
+}
+
+.headerContainer {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: #1c1917;
+  letter-spacing: -0.025em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+:global(.dark) .title {
+  color: #f5f5f4;
+}
+
+.iconWrapper {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  background-color: #fee2e2;
+  color: #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+}
+
+:global(.dark) .iconWrapper {
+  background-color: rgba(153, 27, 27, 0.4);
+  color: #f87171;
+}
+
+.subtitle {
+  font-size: 0.875rem;
+  color: #78716c;
+  margin-top: 0.35rem;
+  line-height: 1.4;
+}
+
+:global(.dark) .subtitle {
+  color: #a8a29e;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.75rem;
+  border-radius: 1.25rem;
+  border: 1px solid #f0ece3;
+  box-shadow: 0 4px 16px -4px rgba(0, 0, 0, 0.04);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+:global(.dark) .card {
+  background-color: #1c1917;
+  border-color: #292524;
+}
+
+.dropzone {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #f87171;
+  border-radius: 1.25rem;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fef2f2;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+}
+
+:global(.dark) .dropzone {
+  background-color: rgba(127, 29, 29, 0.12);
+  border-color: #991b1b;
+}
+
+.dropzone:hover {
+  background-color: #fee2e2;
+  border-color: #ef4444;
+  transform: translateY(-1px);
+}
+
+:global(.dark) .dropzone:hover {
+  background-color: rgba(127, 29, 29, 0.22);
+}
+
+.dropIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: #ef4444;
+  margin-bottom: 0.85rem;
+  transition: transform 200ms ease;
+}
+
+.dropzone:hover .dropIcon {
+  transform: scale(1.08);
+}
+
+/* SCANNER WRAPPER & LASER ANIMATION */
+.scannerContainer {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background: #fdfcfa;
+  border: 1px solid #f0ece3;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+:global(.dark) .scannerContainer {
+  background: #141210;
+  border-color: #292524;
+}
+
+.scannerBeam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ec4899, #8b5cf6, #3b82f6, #10b981, #f59e0b, #ef4444);
+  box-shadow: 0 0 18px 4px rgba(239, 68, 68, 0.85), 0 0 35px 8px rgba(168, 85, 247, 0.6);
+  z-index: 30;
+  animation: scanLaser 1.8s ease-in-out infinite alternate;
+}
+
+.scannerGlow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: linear-gradient(180deg, rgba(239, 68, 68, 0.35), transparent);
+  pointer-events: none;
+  z-index: 29;
+  animation: scanLaserGlow 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes scanLaser {
+  0% { top: 0%; }
+  100% { top: 98%; }
+}
+
+@keyframes scanLaserGlow {
+  0% { top: 0%; }
+  100% { top: calc(98% - 70px); }
+}
+
+.scanningBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #ef4444, #8b5cf6);
+  color: #ffffff;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 4px 14px rgba(239, 68, 68, 0.35);
+}
+
+.dropText {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 0.25rem;
+}
+
+:global(.dark) .dropText {
+  color: #f5f5f4;
+}
+
+.dropSub {
+  font-size: 0.8125rem;
+  color: #78716c;
+}
+
+:global(.dark) .dropSub {
+  color: #a8a29e;
+}
+
+.fileInfoCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background-color: #fafaf9;
+  border-radius: 0.875rem;
+  border: 1px solid #e7e5e4;
+  margin-bottom: 1.5rem;
+}
+
+:global(.dark) .fileInfoCard {
+  background-color: #141210;
+  border-color: #292524;
+}
+
+.fileLeft {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.pdfBadge {
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.5rem;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.fileName {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1c1917;
+}
+
+:global(.dark) .fileName {
+  color: #f5f5f4;
+}
+
+.fileMeta {
+  font-size: 0.75rem;
+  color: #78716c;
+}
+
+:global(.dark) .fileMeta {
+  color: #a8a29e;
+}
+
+.removeBtn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modeSelector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .modeSelector {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modeBtn {
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 1px solid #e7e5e4;
+  background-color: #f5f5f4;
+  color: #44403c;
+  transition: all 150ms;
+}
+
+:global(.dark) .modeBtn {
+  background-color: #292524;
+  color: #d6d3d1;
+  border-color: #3f3f46;
+}
+
+.modeBtnActive {
+  background-color: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+}
+
+:global(.dark) .modeBtnActive {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.optionsBox {
+  background-color: #fafaf9;
+  border-radius: 0.875rem;
+  padding: 1.25rem;
+  border: 1px solid #e7e5e4;
+  margin-bottom: 1.5rem;
+}
+
+:global(.dark) .optionsBox {
+  background-color: #141210;
+  border-color: #292524;
+}
+
+.label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #44403c;
+  margin-bottom: 0.5rem;
+}
+
+:global(.dark) .label {
+  color: #d6d3d1;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e7e5e4;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  color: #1c1917;
+  box-sizing: border-box;
+}
+
+:global(.dark) .input {
+  background-color: #1c1917;
+  border-color: #292524;
+  color: #f5f5f4;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: #78716c;
+  margin-top: 0.4rem;
+}
+
+:global(.dark) .hint {
+  color: #a8a29e;
+}
+
+.actionBtn {
+  width: 100%;
+  padding: 0.85rem;
+  border-radius: 0.75rem;
+  background-color: #ef4444;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 10px rgba(239, 68, 68, 0.25);
+  transition: all 150ms;
+}
+
+.actionBtn:hover:not(:disabled) {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+.actionBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.statusMessage {
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.statusSuccess {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+:global(.dark) .statusSuccess {
+  background-color: rgba(22, 101, 52, 0.3);
+  color: #86efac;
+}
+
+.statusError {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+:global(.dark) .statusError {
+  background-color: rgba(153, 27, 27, 0.3);
+  color: #fca5a5;
+}

@@ -1,0 +1,346 @@
+.seoWrapper {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 1rem 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (min-width: 640px) {
+  .seoWrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .seoWrapper {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Section Header Styles */
+.sectionHeader {
+  margin-bottom: 1.5rem;
+}
+
+.sectionSubtitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ea580c;
+  margin-bottom: 0.35rem;
+}
+
+:global(.dark) .sectionSubtitle {
+  color: #fb923c;
+}
+
+.sectionTitle {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #1c1917;
+  letter-spacing: -0.015em;
+}
+
+:global(.dark) .sectionTitle {
+  color: #f5f5f4;
+}
+
+/* 1. Step-by-Step Guide Grid */
+.stepsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .stepsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stepCard {
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  position: relative;
+  transition: all 180ms ease;
+}
+
+.stepCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px -2px rgba(0, 0, 0, 0.08);
+}
+
+:global(.dark) .stepCard {
+  background: #18161b;
+  border-color: #272230;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+:global(.dark) .stepCard:hover {
+  border-color: #3b3547;
+}
+
+.stepBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.65rem;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #ea580c;
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+:global(.dark) .stepBadge {
+  background: rgba(124, 45, 18, 0.4);
+  border-color: rgba(234, 88, 12, 0.5);
+  color: #fb923c;
+}
+
+.stepTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1c1917;
+}
+
+:global(.dark) .stepTitle {
+  color: #f5f5f4;
+}
+
+.stepDesc {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #57534e;
+}
+
+:global(.dark) .stepDesc {
+  color: #a8a29e;
+}
+
+/* 2. Technical Specifications & Limitations */
+.specsBox {
+  background: #fafaf9;
+  border: 1px solid #e7e5e4;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+}
+
+:global(.dark) .specsBox {
+  background: #141216;
+  border-color: #272230;
+}
+
+.specsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .specsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .specsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.specCard {
+  background: #ffffff;
+  border: 1px solid #f0ece3;
+  border-radius: 0.85rem;
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+:global(.dark) .specCard {
+  background: #1c1922;
+  border-color: #2c2738;
+}
+
+.specLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #78716c;
+  letter-spacing: 0.025em;
+}
+
+:global(.dark) .specLabel {
+  color: #a8a29e;
+}
+
+.specValue {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1c1917;
+  line-height: 1.45;
+}
+
+:global(.dark) .specValue {
+  color: #f5f5f4;
+}
+
+/* 3. Tool FAQs Section */
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.faqItem {
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 0.85rem;
+  padding: 1.25rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color 150ms ease;
+}
+
+.faqItem:hover {
+  border-color: #d6d3d1;
+}
+
+:global(.dark) .faqItem {
+  background: #18161b;
+  border-color: #272230;
+}
+
+:global(.dark) .faqItem:hover {
+  border-color: #3b3547;
+}
+
+.faqQuestion {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #1c1917;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+:global(.dark) .faqQuestion {
+  color: #f5f5f4;
+}
+
+.faqQIcon {
+  color: #ea580c;
+  font-weight: 800;
+}
+
+:global(.dark) .faqQIcon {
+  color: #fb923c;
+}
+
+.faqAnswer {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #57534e;
+  padding-left: 1.25rem;
+}
+
+:global(.dark) .faqAnswer {
+  color: #a8a29e;
+}
+
+/* 4. Contextual Related Tools Grid */
+.relatedGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .relatedGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .relatedGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.relatedCard {
+  background: #ffffff;
+  border: 1px solid #e7e5e4;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: all 180ms ease;
+}
+
+.relatedCard:hover {
+  transform: translateY(-2px);
+  border-color: #fb923c;
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.12);
+}
+
+:global(.dark) .relatedCard {
+  background: #18161b;
+  border-color: #272230;
+}
+
+:global(.dark) .relatedCard:hover {
+  border-color: #ea580c;
+  box-shadow: 0 4px 20px rgba(234, 88, 12, 0.18);
+}
+
+.relatedTitle {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #1c1917;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+:global(.dark) .relatedTitle {
+  color: #f5f5f4;
+}
+
+.relatedArrow {
+  color: #ea580c;
+  font-size: 0.875rem;
+  transition: transform 150ms ease;
+}
+
+.relatedCard:hover .relatedArrow {
+  transform: translateX(3px);
+}
+
+.relatedDesc {
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: #78716c;
+}
+
+:global(.dark) .relatedDesc {
+  color: #a8a29e;
+}
