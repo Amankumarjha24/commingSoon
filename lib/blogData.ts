@@ -152,6 +152,7 @@ export async function fetchAllBlogs(): Promise<BlogPost[]> {
     const res = await fetch(`${apiUrl}/api/blogs`, {
       next: { revalidate: 60 },
       cache: 'default',
+      signal: AbortSignal.timeout(4000),
     });
     if (!res.ok) throw new Error('Failed to fetch from backend');
     const json = await res.json();
@@ -170,6 +171,7 @@ export async function fetchBlogBySlug(slug: string): Promise<BlogPost | null> {
     const res = await fetch(`${apiUrl}/api/blogs/${slug}`, {
       next: { revalidate: 60 },
       cache: 'default',
+      signal: AbortSignal.timeout(4000),
     });
     if (!res.ok) throw new Error('Failed to fetch from backend');
     const json = await res.json();

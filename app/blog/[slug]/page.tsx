@@ -9,6 +9,13 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+export async function generateStaticParams() {
+  const posts = await fetchAllBlogs();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
   const post = await fetchBlogBySlug(slug);
@@ -109,7 +116,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     datePublished: post.createdAt || '2026-10-10',
     dateModified: post.updatedAt || post.createdAt || '2026-10-10',
     author: {
-      '@type': 'Person',
+      '@type': post.author.includes('Editorial') || post.author.includes('Desk') || post.author.includes('Team') ? 'Organization' : 'Person',
       name: post.author,
     },
     publisher: {

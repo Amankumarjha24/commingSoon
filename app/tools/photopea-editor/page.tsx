@@ -19,7 +19,7 @@ export default function PhotopeaEditorPage() {
     reader.onload = (event) => {
       const buffer = event.target?.result as ArrayBuffer;
       if (iframeRef.current?.contentWindow) {
-        iframeRef.current.contentWindow.postMessage(buffer, '*');
+        iframeRef.current.contentWindow.postMessage(buffer, 'https://www.photopea.com');
       }
     };
     reader.readAsArrayBuffer(file);
@@ -29,7 +29,7 @@ export default function PhotopeaEditorPage() {
   const requestExport = (format: string) => {
     if (!iframeRef.current?.contentWindow) return;
     const script = `app.activeDocument.saveToOE("${format}");`;
-    iframeRef.current.contentWindow.postMessage(script, '*');
+    iframeRef.current.contentWindow.postMessage(script, 'https://www.photopea.com');
   };
 
   return (

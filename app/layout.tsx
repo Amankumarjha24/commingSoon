@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   description:
     'Free online PDF, image, video and calculator tools. Merge PDFs, compress images to target KB sizes and more, with privacy-focused browser processing.',
   authors: [{ name: 'ToolsforTools Team' }],
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -29,6 +32,7 @@ export const metadata: Metadata = {
     siteName: 'ToolsforTools',
     type: 'website',
     locale: 'en_US',
+    url: siteUrl,
     title: 'Free Online PDF, Image & Utility Tools | ToolsforTools',
     description:
       'Free online PDF, image, video and calculator tools. 100% private in-browser processing.',

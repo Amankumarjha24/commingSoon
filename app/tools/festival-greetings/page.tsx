@@ -68,7 +68,8 @@ export default function App() {
       if (wishId) {
         setIsLoadingWish(true);
         try {
-          const res = await fetch(`http://localhost:5000/api/greetings/${wishId}`);
+          const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+          const res = await fetch(`${apiUrl}/api/greetings/${wishId}`);
           if (res.ok) {
             const data = await res.json();
             if (data.wish) {

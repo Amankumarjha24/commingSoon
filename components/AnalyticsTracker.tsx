@@ -24,7 +24,8 @@ export default function AnalyticsTracker() {
 
     const track = async () => {
       try {
-        await fetch('http://localhost:5000/api/analytics/track', {
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+        await fetch(`${apiUrl}/api/analytics/track`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
