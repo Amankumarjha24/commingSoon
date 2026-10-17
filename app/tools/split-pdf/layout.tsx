@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Split PDF Online — Extract Pages & Custom Ranges from PDF',
-  description: 'Split large PDF documents into single pages or custom ranges without uploading to any server. Fast, free, and completely private.',
+  title: 'Split PDF Online Free — Extract Pages & Separate PDF Files',
+  description: 'Free online tool to split PDF files into separate pages or custom page ranges instantly. Fast, secure, in-browser PDF page extractor with no upload limits.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/split-pdf',
   },
   openGraph: {
-    title: 'Split PDF Online — Extract Pages & Custom Ranges from PDF | ToolsforTools',
-    description: 'Split large PDF documents into single pages or custom ranges without uploading to any server. Fast, free, and completely private.',
+    title: 'Split PDF Online Free — Extract Pages & Separate PDF Files | ToolsforTools',
+    description: 'Free online tool to split PDF files into separate pages or custom page ranges instantly. Fast, secure, in-browser PDF page extractor with no upload limits.',
     url: 'https://toolsfortools.in/tools/split-pdf',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Split PDF Online — Extract Pages & Custom Ranges from PDF | ToolsforTools',
-    description: 'Split large PDF documents into single pages or custom ranges without uploading to any server. Fast, free, and completely private.',
+    title: 'Split PDF Online Free — Extract Pages & Separate PDF Files | ToolsforTools',
+    description: 'Free online tool to split PDF files into separate pages or custom page ranges instantly. Fast, secure, in-browser PDF page extractor with no upload limits.',
   },
 };
 

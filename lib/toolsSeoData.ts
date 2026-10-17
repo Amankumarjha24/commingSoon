@@ -23,6 +23,7 @@ export const TOOLS_SEO_DATA: Record<string, ToolSeoData> = {
       { label: 'Map Compatibility', value: 'Google Maps, Apple Photos, Lightroom, Instagram EXIF' }
     ],
     faqs: [
+      { q: 'How to geotag photos online for free?', a: 'Upload your image, enter decimal latitude and longitude coordinates (or choose a city preset), and click "Download with Verified EXIF". The coordinates are encoded directly into the JPEG metadata with zero cloud upload.' },
       { q: 'Does this really change the EXIF GPS metadata inside the photo?', a: 'Yes. It writes genuine binary EXIF tags (GPSLatitude, GPSLongitude, GPSAltitude, GPSDateStamp) conforming to the official EXIF 2.3 standard. Photo apps like Apple Photos, Google Photos, and Adobe Lightroom will recognize the exact pin on their world map.' },
       { q: 'Can I change the location of a photo taken without GPS?', a: 'Yes. Even if your camera or phone had location services disabled, this tool will create a fresh GPS metadata block and embed your chosen coordinates.' },
       { q: 'Are my location credentials or photos stored on your server?', a: 'Never. ToolsforTools processes all image manipulation and EXIF writing locally inside your browser via WebAssembly and JavaScript. Zero data is uploaded to our servers.' }
@@ -182,6 +183,8 @@ export const TOOLS_SEO_DATA: Record<string, ToolSeoData> = {
       { label: 'Portal Compliance', value: 'UPSC, SSC, IBPS, State PSC, NEET, JEE exam portals' }
     ],
     faqs: [
+      { q: 'How can I compress an image to exactly 20KB or 50KB online?', a: 'Upload your photo, select the 20KB or 50KB preset, and our in-browser DCT quantization engine automatically optimizes JPEG quality until the exact file size is achieved without blur.' },
+      { q: 'How to reduce photo and signature size in KB for UPSC, SSC, and govt exam portals?', a: 'Upload your passport photo or signature image, pick 20KB or 50KB, and download. The file strictly satisfies all official application portal file-size restrictions.' },
       { q: 'Why do government portals reject photos over 50KB?', a: 'Application portals have strict file size validators to save server bandwidth. Our compressor optimizes quality to ensure your file falls strictly under the maximum allowed threshold.' }
     ],
     relatedTools: [
@@ -449,6 +452,8 @@ export const TOOLS_SEO_DATA: Record<string, ToolSeoData> = {
       { label: 'Print Layouts', value: 'Single crop, 4×6 photo sheet (8 photos), A4 sheet (32 photos)' }
     ],
     faqs: [
+      { q: 'How do I create a compliant passport size photo online?', a: 'Upload your portrait, select the UPSC/SSC preset (200x230 px at 3.5x4.5 cm), set pure white background, and export. The output complies with all official portal dimensions and size constraints.' },
+      { q: 'How to resize signature to 10KB - 20KB for online exam forms?', a: 'Upload your signature photo on white paper. The studio auto-cleans ink contrast, whitens paper shadows, crops to 140x60 px, and keeps the file size strictly between 10KB to 20KB.' },
       { q: 'Will this photo pass SSC/UPSC online portal checks?', a: 'Yes. The dimensions, aspect ratio, and file size are locked to the exact portal specifications.' }
     ],
     relatedTools: [

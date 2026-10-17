@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Compress PDF Online — Reduce PDF File Size Without Quality Loss',
-  description: 'Optimize and compress PDF document size with object stream optimization. Fast, free client-side PDF compression with zero server upload.',
+  title: 'Compress PDF to 100KB, 50KB — Reduce PDF File Size Online Free',
+  description: 'Free online PDF compressor to reduce PDF file size to 100KB, 200KB or 50KB without losing quality. 100% private in-browser document compression with zero upload.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/compress-pdf',
   },
   openGraph: {
-    title: 'Compress PDF Online — Reduce PDF File Size Without Quality Loss | ToolsforTools',
-    description: 'Optimize and compress PDF document size with object stream optimization. Fast, free client-side PDF compression with zero server upload.',
+    title: 'Compress PDF to 100KB, 50KB — Reduce PDF File Size Online Free | ToolsforTools',
+    description: 'Free online PDF compressor to reduce PDF file size to 100KB, 200KB or 50KB without losing quality. 100% private in-browser document compression with zero upload.',
     url: 'https://toolsfortools.in/tools/compress-pdf',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Compress PDF Online — Reduce PDF File Size Without Quality Loss | ToolsforTools',
-    description: 'Optimize and compress PDF document size with object stream optimization. Fast, free client-side PDF compression with zero server upload.',
+    title: 'Compress PDF to 100KB, 50KB — Reduce PDF File Size Online Free | ToolsforTools',
+    description: 'Free online PDF compressor to reduce PDF file size to 100KB, 200KB or 50KB without losing quality. 100% private in-browser document compression with zero upload.',
   },
 };
 

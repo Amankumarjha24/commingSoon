@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'SIP Wealth Calculator — Mutual Fund Compound Returns Planner',
-  description: 'Calculate compound returns on SIP investments. Visualize growth curves, see month-by-month breakdown, and plan your mutual fund wealth.',
+  title: 'SIP Calculator Online — Mutual Fund Return & Step-Up SIP Wealth Planner',
+  description: 'Calculate returns on your monthly SIP mutual fund investments with compounding growth charts, inflation adjustment, and step-up SIP wealth projections.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/sip-calculator',
   },
   openGraph: {
-    title: 'SIP Wealth Calculator — Mutual Fund Compound Returns Planner | ToolsforTools',
-    description: 'Calculate compound returns on SIP investments. Visualize growth curves, see month-by-month breakdown, and plan your mutual fund wealth.',
+    title: 'SIP Calculator Online — Mutual Fund Return & Step-Up SIP Wealth Planner | ToolsforTools',
+    description: 'Calculate returns on your monthly SIP mutual fund investments with compounding growth charts, inflation adjustment, and step-up SIP wealth projections.',
     url: 'https://toolsfortools.in/tools/sip-calculator',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'SIP Wealth Calculator — Mutual Fund Compound Returns Planner | ToolsforTools',
-    description: 'Calculate compound returns on SIP investments. Visualize growth curves, see month-by-month breakdown, and plan your mutual fund wealth.',
+    title: 'SIP Calculator Online — Mutual Fund Return & Step-Up SIP Wealth Planner | ToolsforTools',
+    description: 'Calculate returns on your monthly SIP mutual fund investments with compounding growth charts, inflation adjustment, and step-up SIP wealth projections.',
   },
 };
 

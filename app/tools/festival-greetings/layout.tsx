@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: '3D Birthday & Festival Surprise Wisher — 3D Gift Box & Music',
-  description: 'Create interactive 3D birthday & festival greeting surprises (Diwali, Eid, Christmas, Holi) with 3D gift box unboxing, synth music, confetti, and short link sharing.',
+  title: 'Customised 3D Birthday Wishes & Festival Greetings Creator with Music',
+  description: 'Create unique customised 3D birthday wishes and animated festival greetings (Diwali, Eid, Holi) with 3D gift box unboxing, music, and instant shareable links.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/festival-greetings',
   },
   openGraph: {
-    title: '3D Birthday & Festival Surprise Wisher — 3D Gift Box & Music | ToolsforTools',
-    description: 'Create interactive 3D birthday & festival greeting surprises (Diwali, Eid, Christmas, Holi) with 3D gift box unboxing, synth music, confetti, and short link sharing.',
+    title: 'Customised 3D Birthday Wishes & Festival Greetings Creator with Music | ToolsforTools',
+    description: 'Create unique customised 3D birthday wishes and animated festival greetings (Diwali, Eid, Holi) with 3D gift box unboxing, music, and instant shareable links.',
     url: 'https://toolsfortools.in/tools/festival-greetings',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '3D Birthday & Festival Surprise Wisher — 3D Gift Box & Music | ToolsforTools',
-    description: 'Create interactive 3D birthday & festival greeting surprises (Diwali, Eid, Christmas, Holi) with 3D gift box unboxing, synth music, confetti, and short link sharing.',
+    title: 'Customised 3D Birthday Wishes & Festival Greetings Creator with Music | ToolsforTools',
+    description: 'Create unique customised 3D birthday wishes and animated festival greetings (Diwali, Eid, Holi) with 3D gift box unboxing, music, and instant shareable links.',
   },
 };
 

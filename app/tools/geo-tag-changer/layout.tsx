@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Geo Tag Changer & EXIF GPS Editor Pro',
-  description: 'Add, edit, or inject genuine GPS coordinates (Latitude, Longitude & Altitude) into photos with custom file naming. 100% private in-browser tool.',
+  title: 'Geotag Photo Online Free — Add GPS Location to Photos & EXIF Editor',
+  description: 'Free online geotag photo editor. Add GPS location to photos, inject latitude & longitude EXIF coordinates, and edit geotag photos online with zero server uploads.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/geo-tag-changer',
   },
   openGraph: {
-    title: 'Geo Tag Changer & EXIF GPS Editor Pro | ToolsforTools',
-    description: 'Add, edit, or inject genuine GPS coordinates (Latitude, Longitude & Altitude) into photos with custom file naming. 100% private in-browser tool.',
+    title: 'Geotag Photo Online Free — Add GPS Location to Photos & EXIF Editor | ToolsforTools',
+    description: 'Free online geotag photo editor. Add GPS location to photos, inject latitude & longitude EXIF coordinates, and edit geotag photos online with zero server uploads.',
     url: 'https://toolsfortools.in/tools/geo-tag-changer',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Geo Tag Changer & EXIF GPS Editor Pro | ToolsforTools',
-    description: 'Add, edit, or inject genuine GPS coordinates (Latitude, Longitude & Altitude) into photos with custom file naming. 100% private in-browser tool.',
+    title: 'Geotag Photo Online Free — Add GPS Location to Photos & EXIF Editor | ToolsforTools',
+    description: 'Free online geotag photo editor. Add GPS location to photos, inject latitude & longitude EXIF coordinates, and edit geotag photos online with zero server uploads.',
   },
 };
 
