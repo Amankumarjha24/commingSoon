@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Photopea Studio Pro — Free Online Photoshop PSD Alternative',
-  description: 'Full PSD-compatible online photo editor with layers, masks, RAW support, and raster brushes. A free browser-based Adobe Photoshop replacement.',
+  title: 'Photopea Studio Pro — Free Photoshop Alternative Online (PSD Editor)',
+  description: 'Free online photo editor like Photoshop. Open, edit, and save PSD files with full layer, mask, filter, and raster brush support inside your browser.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/photopea-editor',
   },
   openGraph: {
-    title: 'Photopea Studio Pro — Free Online Photoshop PSD Alternative | ToolsforTools',
-    description: 'Full PSD-compatible online photo editor with layers, masks, RAW support, and raster brushes. A free browser-based Adobe Photoshop replacement.',
+    title: 'Photopea Studio Pro — Free Photoshop Alternative Online (PSD Editor) | ToolsforTools',
+    description: 'Free online photo editor like Photoshop. Open, edit, and save PSD files with full layer, mask, filter, and raster brush support inside your browser.',
     url: 'https://toolsfortools.in/tools/photopea-editor',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Photopea Studio Pro — Free Online Photoshop PSD Alternative | ToolsforTools',
-    description: 'Full PSD-compatible online photo editor with layers, masks, RAW support, and raster brushes. A free browser-based Adobe Photoshop replacement.',
+    title: 'Photopea Studio Pro — Free Photoshop Alternative Online (PSD Editor) | ToolsforTools',
+    description: 'Free online photo editor like Photoshop. Open, edit, and save PSD files with full layer, mask, filter, and raster brush support inside your browser.',
   },
 };
 

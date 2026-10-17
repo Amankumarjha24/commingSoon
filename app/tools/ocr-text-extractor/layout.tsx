@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Free Online OCR Text Extractor — Extract Text from Images with AI',
-  description: 'Extract printed or handwritten text from images, scanned documents, and screenshots using neural OCR AI. Supports English and Hindi.',
+  title: 'Extract Text from Image Online (OCR) — Hindi & English Document Scanner',
+  description: 'Extract text from image online free. Neural OCR tool accurately converts photos, scanned documents, receipts, and screenshots into editable text.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/ocr-text-extractor',
   },
   openGraph: {
-    title: 'Free Online OCR Text Extractor — Extract Text from Images with AI | ToolsforTools',
-    description: 'Extract printed or handwritten text from images, scanned documents, and screenshots using neural OCR AI. Supports English and Hindi.',
+    title: 'Extract Text from Image Online (OCR) — Hindi & English Document Scanner | ToolsforTools',
+    description: 'Extract text from image online free. Neural OCR tool accurately converts photos, scanned documents, receipts, and screenshots into editable text.',
     url: 'https://toolsfortools.in/tools/ocr-text-extractor',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Free Online OCR Text Extractor — Extract Text from Images with AI | ToolsforTools',
-    description: 'Extract printed or handwritten text from images, scanned documents, and screenshots using neural OCR AI. Supports English and Hindi.',
+    title: 'Extract Text from Image Online (OCR) — Hindi & English Document Scanner | ToolsforTools',
+    description: 'Extract text from image online free. Neural OCR tool accurately converts photos, scanned documents, receipts, and screenshots into editable text.',
   },
 };
 

@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Image Format Converter — Convert JPG, PNG, WebP, GIF, BMP Online',
-  description: 'Convert images between WebP, PNG, JPG, GIF, and BMP formats instantly. Batch image conversion with 100% client-side privacy.',
+  title: 'Image Format Converter Online — JPG, PNG & WebP Batch Convert',
+  description: 'Free online image format converter. Convert JPG to PNG, PNG to WebP, and WebP to JPG in batch directly in your browser with zero server uploads.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/image-converter',
   },
   openGraph: {
-    title: 'Image Format Converter — Convert JPG, PNG, WebP, GIF, BMP Online | ToolsforTools',
-    description: 'Convert images between WebP, PNG, JPG, GIF, and BMP formats instantly. Batch image conversion with 100% client-side privacy.',
+    title: 'Image Format Converter Online — JPG, PNG & WebP Batch Convert | ToolsforTools',
+    description: 'Free online image format converter. Convert JPG to PNG, PNG to WebP, and WebP to JPG in batch directly in your browser with zero server uploads.',
     url: 'https://toolsfortools.in/tools/image-converter',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Image Format Converter — Convert JPG, PNG, WebP, GIF, BMP Online | ToolsforTools',
-    description: 'Convert images between WebP, PNG, JPG, GIF, and BMP formats instantly. Batch image conversion with 100% client-side privacy.',
+    title: 'Image Format Converter Online — JPG, PNG & WebP Batch Convert | ToolsforTools',
+    description: 'Free online image format converter. Convert JPG to PNG, PNG to WebP, and WebP to JPG in batch directly in your browser with zero server uploads.',
   },
 };
 

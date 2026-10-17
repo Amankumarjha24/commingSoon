@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Video to GIF Converter — Create Animated Looping GIFs Online',
-  description: 'Convert MP4, WebM, and MOV videos into high-quality, looping animated GIF files and frame sequences with custom FPS. 100% free and client-side.',
+  title: 'Video to GIF Converter Online — Convert MP4 to Animated GIF Free',
+  description: 'Convert video to GIF online free. Turn MP4, WebM, and MOV clips into high-quality looping animated GIFs with custom framerate and dimensions.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/video-to-gif',
   },
   openGraph: {
-    title: 'Video to GIF Converter — Create Animated Looping GIFs Online | ToolsforTools',
-    description: 'Convert MP4, WebM, and MOV videos into high-quality, looping animated GIF files and frame sequences with custom FPS. 100% free and client-side.',
+    title: 'Video to GIF Converter Online — Convert MP4 to Animated GIF Free | ToolsforTools',
+    description: 'Convert video to GIF online free. Turn MP4, WebM, and MOV clips into high-quality looping animated GIFs with custom framerate and dimensions.',
     url: 'https://toolsfortools.in/tools/video-to-gif',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Video to GIF Converter — Create Animated Looping GIFs Online | ToolsforTools',
-    description: 'Convert MP4, WebM, and MOV videos into high-quality, looping animated GIF files and frame sequences with custom FPS. 100% free and client-side.',
+    title: 'Video to GIF Converter Online — Convert MP4 to Animated GIF Free | ToolsforTools',
+    description: 'Convert video to GIF online free. Turn MP4, WebM, and MOV clips into high-quality looping animated GIFs with custom framerate and dimensions.',
   },
 };
 

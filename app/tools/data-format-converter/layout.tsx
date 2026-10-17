@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Data Format Converter — Bi-directional JSON, YAML, XML & CSV',
-  description: 'Convert seamlessly between JSON, YAML, XML, and CSV data formats with automatic syntax validation and beautification.',
+  title: 'JSON to CSV Converter Online — JSON, CSV, XML & YAML Formatter',
+  description: 'Free online data format converter. Convert JSON to CSV, CSV to JSON, XML to JSON, and YAML with automatic syntax validation and instant download.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/data-format-converter',
   },
   openGraph: {
-    title: 'Data Format Converter — Bi-directional JSON, YAML, XML & CSV | ToolsforTools',
-    description: 'Convert seamlessly between JSON, YAML, XML, and CSV data formats with automatic syntax validation and beautification.',
+    title: 'JSON to CSV Converter Online — JSON, CSV, XML & YAML Formatter | ToolsforTools',
+    description: 'Free online data format converter. Convert JSON to CSV, CSV to JSON, XML to JSON, and YAML with automatic syntax validation and instant download.',
     url: 'https://toolsfortools.in/tools/data-format-converter',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Data Format Converter — Bi-directional JSON, YAML, XML & CSV | ToolsforTools',
-    description: 'Convert seamlessly between JSON, YAML, XML, and CSV data formats with automatic syntax validation and beautification.',
+    title: 'JSON to CSV Converter Online — JSON, CSV, XML & YAML Formatter | ToolsforTools',
+    description: 'Free online data format converter. Convert JSON to CSV, CSV to JSON, XML to JSON, and YAML with automatic syntax validation and instant download.',
   },
 };
 

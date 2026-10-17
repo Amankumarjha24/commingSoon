@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Lorem Ipsum Generator — Dummy Placeholder Text for Designers',
-  description: 'Generate custom paragraphs, sentences, words, and list items of classic Lorem Ipsum placeholder text for UI layouts and wireframes.',
+  title: 'Lorem Ipsum Generator — Custom Dummy Placeholder Text Generator',
+  description: 'Free online Lorem Ipsum generator. Generate custom dummy placeholder text in paragraphs, sentences, or words for web design and mockups.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/lorem-ipsum-generator',
   },
   openGraph: {
-    title: 'Lorem Ipsum Generator — Dummy Placeholder Text for Designers | ToolsforTools',
-    description: 'Generate custom paragraphs, sentences, words, and list items of classic Lorem Ipsum placeholder text for UI layouts and wireframes.',
+    title: 'Lorem Ipsum Generator — Custom Dummy Placeholder Text Generator | ToolsforTools',
+    description: 'Free online Lorem Ipsum generator. Generate custom dummy placeholder text in paragraphs, sentences, or words for web design and mockups.',
     url: 'https://toolsfortools.in/tools/lorem-ipsum-generator',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Lorem Ipsum Generator — Dummy Placeholder Text for Designers | ToolsforTools',
-    description: 'Generate custom paragraphs, sentences, words, and list items of classic Lorem Ipsum placeholder text for UI layouts and wireframes.',
+    title: 'Lorem Ipsum Generator — Custom Dummy Placeholder Text Generator | ToolsforTools',
+    description: 'Free online Lorem Ipsum generator. Generate custom dummy placeholder text in paragraphs, sentences, or words for web design and mockups.',
   },
 };
 

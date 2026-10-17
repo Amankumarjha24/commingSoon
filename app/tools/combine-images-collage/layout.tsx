@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Combine Images & Collage Maker — Merge Photos Side by Side',
-  description: 'Combine multiple photos horizontally, vertically, or in grid collages with adjustable spacing and high-resolution export.',
+  title: 'Combine Images Online — Side-by-Side & Grid Photo Collage Maker',
+  description: 'Combine images online free. Merge photos side by side, vertically, or create grid photo collages with customizable spacing and high-res export.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/combine-images-collage',
   },
   openGraph: {
-    title: 'Combine Images & Collage Maker — Merge Photos Side by Side | ToolsforTools',
-    description: 'Combine multiple photos horizontally, vertically, or in grid collages with adjustable spacing and high-resolution export.',
+    title: 'Combine Images Online — Side-by-Side & Grid Photo Collage Maker | ToolsforTools',
+    description: 'Combine images online free. Merge photos side by side, vertically, or create grid photo collages with customizable spacing and high-res export.',
     url: 'https://toolsfortools.in/tools/combine-images-collage',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Combine Images & Collage Maker — Merge Photos Side by Side | ToolsforTools',
-    description: 'Combine multiple photos horizontally, vertically, or in grid collages with adjustable spacing and high-resolution export.',
+    title: 'Combine Images Online — Side-by-Side & Grid Photo Collage Maker | ToolsforTools',
+    description: 'Combine images online free. Merge photos side by side, vertically, or create grid photo collages with customizable spacing and high-res export.',
   },
 };
 

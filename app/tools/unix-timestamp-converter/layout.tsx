@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Unix Timestamp Converter — Epoch to Human Readable Date & Time',
-  description: 'Convert Unix epoch timestamps to human-readable dates in UTC and local timezones, or generate timestamps from dates.',
+  title: 'Unix Timestamp Converter — Epoch to Human Date & Time Converter',
+  description: 'Unix timestamp converter online. Convert epoch time to human-readable dates and convert date/time to Unix timestamp in UTC and local timezone.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/unix-timestamp-converter',
   },
   openGraph: {
-    title: 'Unix Timestamp Converter — Epoch to Human Readable Date & Time | ToolsforTools',
-    description: 'Convert Unix epoch timestamps to human-readable dates in UTC and local timezones, or generate timestamps from dates.',
+    title: 'Unix Timestamp Converter — Epoch to Human Date & Time Converter | ToolsforTools',
+    description: 'Unix timestamp converter online. Convert epoch time to human-readable dates and convert date/time to Unix timestamp in UTC and local timezone.',
     url: 'https://toolsfortools.in/tools/unix-timestamp-converter',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Unix Timestamp Converter — Epoch to Human Readable Date & Time | ToolsforTools',
-    description: 'Convert Unix epoch timestamps to human-readable dates in UTC and local timezones, or generate timestamps from dates.',
+    title: 'Unix Timestamp Converter — Epoch to Human Date & Time Converter | ToolsforTools',
+    description: 'Unix timestamp converter online. Convert epoch time to human-readable dates and convert date/time to Unix timestamp in UTC and local timezone.',
   },
 };
 

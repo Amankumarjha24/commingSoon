@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Profile Photo Maker — Circular Avatar & Border Ring Creator',
-  description: 'Create beautiful circular profile pictures with vibrant gradient border rings and badges for WhatsApp, Instagram, and LinkedIn.',
+  title: 'Profile Picture Maker Online — Round Avatar & Border Ring Studio',
+  description: 'Profile picture maker online free. Create circular avatars with colorful gradient border rings and badges for WhatsApp, Instagram, and LinkedIn.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/profile-photo-maker',
   },
   openGraph: {
-    title: 'Profile Photo Maker — Circular Avatar & Border Ring Creator | ToolsforTools',
-    description: 'Create beautiful circular profile pictures with vibrant gradient border rings and badges for WhatsApp, Instagram, and LinkedIn.',
+    title: 'Profile Picture Maker Online — Round Avatar & Border Ring Studio | ToolsforTools',
+    description: 'Profile picture maker online free. Create circular avatars with colorful gradient border rings and badges for WhatsApp, Instagram, and LinkedIn.',
     url: 'https://toolsfortools.in/tools/profile-photo-maker',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Profile Photo Maker — Circular Avatar & Border Ring Creator | ToolsforTools',
-    description: 'Create beautiful circular profile pictures with vibrant gradient border rings and badges for WhatsApp, Instagram, and LinkedIn.',
+    title: 'Profile Picture Maker Online — Round Avatar & Border Ring Studio | ToolsforTools',
+    description: 'Profile picture maker online free. Create circular avatars with colorful gradient border rings and badges for WhatsApp, Instagram, and LinkedIn.',
   },
 };
 

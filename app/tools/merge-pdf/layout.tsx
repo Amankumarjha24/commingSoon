@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Merge PDF Files Online — Combine Multiple PDFs into One',
-  description: 'Combine multiple PDF files into a single organized document in seconds. 100% private browser processing with unlimited file joins.',
+  title: 'Merge PDF Online Free — Combine PDF Files in Browser',
+  description: 'Merge PDF files online free. Combine multiple PDFs into one document directly in your browser. 100% private with no file size limits or server uploads.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/merge-pdf',
   },
   openGraph: {
-    title: 'Merge PDF Files Online — Combine Multiple PDFs into One | ToolsforTools',
-    description: 'Combine multiple PDF files into a single organized document in seconds. 100% private browser processing with unlimited file joins.',
+    title: 'Merge PDF Online Free — Combine PDF Files in Browser | ToolsforTools',
+    description: 'Merge PDF files online free. Combine multiple PDFs into one document directly in your browser. 100% private with no file size limits or server uploads.',
     url: 'https://toolsfortools.in/tools/merge-pdf',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Merge PDF Files Online — Combine Multiple PDFs into One | ToolsforTools',
-    description: 'Combine multiple PDF files into a single organized document in seconds. 100% private browser processing with unlimited file joins.',
+    title: 'Merge PDF Online Free — Combine PDF Files in Browser | ToolsforTools',
+    description: 'Merge PDF files online free. Combine multiple PDFs into one document directly in your browser. 100% private with no file size limits or server uploads.',
   },
 };
 

@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Organize PDF Pages — Reorder, Rotate & Delete Pages Visually',
-  description: 'Visual drag-and-drop PDF page organizer. Reorder, rotate 90/180 degrees, and delete unwanted pages instantly in your browser.',
+  title: 'Organize PDF Pages Online — Reorder, Rotate & Remove Pages Free',
+  description: 'Organize PDF pages online free. Reorder, rotate 90/180 degrees, and remove pages from PDF files visually in your browser with zero server uploads.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/organize-pdf',
   },
   openGraph: {
-    title: 'Organize PDF Pages — Reorder, Rotate & Delete Pages Visually | ToolsforTools',
-    description: 'Visual drag-and-drop PDF page organizer. Reorder, rotate 90/180 degrees, and delete unwanted pages instantly in your browser.',
+    title: 'Organize PDF Pages Online — Reorder, Rotate & Remove Pages Free | ToolsforTools',
+    description: 'Organize PDF pages online free. Reorder, rotate 90/180 degrees, and remove pages from PDF files visually in your browser with zero server uploads.',
     url: 'https://toolsfortools.in/tools/organize-pdf',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Organize PDF Pages — Reorder, Rotate & Delete Pages Visually | ToolsforTools',
-    description: 'Visual drag-and-drop PDF page organizer. Reorder, rotate 90/180 degrees, and delete unwanted pages instantly in your browser.',
+    title: 'Organize PDF Pages Online — Reorder, Rotate & Remove Pages Free | ToolsforTools',
+    description: 'Organize PDF pages online free. Reorder, rotate 90/180 degrees, and remove pages from PDF files visually in your browser with zero server uploads.',
   },
 };
 

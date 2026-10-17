@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'QR Code Generator Pro — Free Scannable Wi-Fi & URL QR Codes',
-  description: 'Generate 100% scannable, high-resolution QR codes for websites, Wi-Fi networks, text, and WhatsApp. Export print-ready PNG and vector SVG.',
+  title: 'QR Code Generator Free — Create Custom QR Codes for URLs & Wi-Fi',
+  description: 'Free online QR code generator. Create custom scannable QR codes for website URLs, Wi-Fi passwords, text, and WhatsApp with high-res PNG and SVG export.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/qr-generator',
   },
   openGraph: {
-    title: 'QR Code Generator Pro — Free Scannable Wi-Fi & URL QR Codes | ToolsforTools',
-    description: 'Generate 100% scannable, high-resolution QR codes for websites, Wi-Fi networks, text, and WhatsApp. Export print-ready PNG and vector SVG.',
+    title: 'QR Code Generator Free — Create Custom QR Codes for URLs & Wi-Fi | ToolsforTools',
+    description: 'Free online QR code generator. Create custom scannable QR codes for website URLs, Wi-Fi passwords, text, and WhatsApp with high-res PNG and SVG export.',
     url: 'https://toolsfortools.in/tools/qr-generator',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'QR Code Generator Pro — Free Scannable Wi-Fi & URL QR Codes | ToolsforTools',
-    description: 'Generate 100% scannable, high-resolution QR codes for websites, Wi-Fi networks, text, and WhatsApp. Export print-ready PNG and vector SVG.',
+    title: 'QR Code Generator Free — Create Custom QR Codes for URLs & Wi-Fi | ToolsforTools',
+    description: 'Free online QR code generator. Create custom scannable QR codes for website URLs, Wi-Fi passwords, text, and WhatsApp with high-res PNG and SVG export.',
   },
 };
 

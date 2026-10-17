@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'Protect PDF with Password — Free AES-256 PDF Encryption',
-  description: 'Lock and password-protect your sensitive PDF documents with military-grade AES-256 encryption directly in your browser. Zero cloud uploads.',
+  title: 'Password Protect PDF Online — Encrypt PDF with Password Free',
+  description: 'Password protect PDF online free. Encrypt your sensitive PDF documents with secure AES password encryption directly in your browser.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/protect-pdf',
   },
   openGraph: {
-    title: 'Protect PDF with Password — Free AES-256 PDF Encryption | ToolsforTools',
-    description: 'Lock and password-protect your sensitive PDF documents with military-grade AES-256 encryption directly in your browser. Zero cloud uploads.',
+    title: 'Password Protect PDF Online — Encrypt PDF with Password Free | ToolsforTools',
+    description: 'Password protect PDF online free. Encrypt your sensitive PDF documents with secure AES password encryption directly in your browser.',
     url: 'https://toolsfortools.in/tools/protect-pdf',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Protect PDF with Password — Free AES-256 PDF Encryption | ToolsforTools',
-    description: 'Lock and password-protect your sensitive PDF documents with military-grade AES-256 encryption directly in your browser. Zero cloud uploads.',
+    title: 'Password Protect PDF Online — Encrypt PDF with Password Free | ToolsforTools',
+    description: 'Password protect PDF online free. Encrypt your sensitive PDF documents with secure AES password encryption directly in your browser.',
   },
 };
 

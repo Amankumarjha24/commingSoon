@@ -3,14 +3,14 @@ import ToolSeoSection from '@/components/ToolSeoSection';
 import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 
 export const metadata: Metadata = {
-  title: 'PDF Watermark & Page Numbering Tool — Add Stamps & Page Numbers',
-  description: 'Add custom text watermarks, confidential diagonal stamps, and Bates page numbers (Page X of Y) to PDF files online for free.',
+  title: 'Add Watermark & Page Numbers to PDF Online Free',
+  description: 'Add watermark to PDF online free and insert Bates page numbers. Customize text opacity, rotation, and font with zero cloud upload.',
   alternates: {
     canonical: 'https://toolsfortools.in/tools/pdf-watermark-number',
   },
   openGraph: {
-    title: 'PDF Watermark & Page Numbering Tool — Add Stamps & Page Numbers | ToolsforTools',
-    description: 'Add custom text watermarks, confidential diagonal stamps, and Bates page numbers (Page X of Y) to PDF files online for free.',
+    title: 'Add Watermark & Page Numbers to PDF Online Free | ToolsforTools',
+    description: 'Add watermark to PDF online free and insert Bates page numbers. Customize text opacity, rotation, and font with zero cloud upload.',
     url: 'https://toolsfortools.in/tools/pdf-watermark-number',
     siteName: 'ToolsforTools',
     locale: 'en_US',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'PDF Watermark & Page Numbering Tool — Add Stamps & Page Numbers | ToolsforTools',
-    description: 'Add custom text watermarks, confidential diagonal stamps, and Bates page numbers (Page X of Y) to PDF files online for free.',
+    title: 'Add Watermark & Page Numbers to PDF Online Free | ToolsforTools',
+    description: 'Add watermark to PDF online free and insert Bates page numbers. Customize text opacity, rotation, and font with zero cloud upload.',
   },
 };
 
