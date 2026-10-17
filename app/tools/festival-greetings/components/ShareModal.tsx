@@ -26,13 +26,44 @@ export const ShareModal: React.FC<ShareModalProps> = ({
   });
   const [showQr, setShowQr] = useState(false);
 
-  // Construct absolute shareable URL with SHORTLINK format
+  // Helper to safely encode wish data into URL hash as universal offline/instant fallback
+  const encodeWishPayload = (w: BirthdayWish): string => {
+    const payload = {
+      r: w.recipientName,
+      s: w.senderName,
+      a: w.age,
+      o: w.occasion || 'Birthday',
+      m: w.message,
+      c: w.character,
+      t: w.theme,
+      st: w.surpriseType,
+      v: w.voucherText,
+      mt: w.musicTheme,
+      exp: w.expiresAt || Date.now() + 24 * 60 * 60 * 1000,
+    };
+    try {
+      const jsonStr = JSON.stringify(payload);
+      return encodeURIComponent(btoa(unescape(encodeURIComponent(jsonStr))));
+    } catch {
+      return '';
+    }
+  };
+
+  // Construct absolute shareable URL with SHORTLINK + HASH PAYLOAD format
   const baseUrl = typeof window !== 'undefined' ? window.location.origin : '';
-  const shareUrl = `${baseUrl}/tools/festival-greetings?w=${wish.id}`;
+  const hashPayload = encodeWishPayload(wish);
+  const shareUrl = `${baseUrl}/tools/festival-greetings?w=${wish.id}${hashPayload ? `#d=${hashPayload}` : ''}`;
+
+  const occasionTitle = wish.occasion || 'Birthday';
+  const greetingEmoji =
+    wish.occasion === 'Diwali' ? '🪔✨' :
+    wish.occasion === 'Eid' ? '🌙✨' :
+    wish.occasion === 'Christmas' ? '🎄🎅' :
+    wish.occasion === 'Holi' ? '🎨🎉' : '🎂🎈';
 
   // WhatsApp formatted message
   const whatsappMessage = encodeURIComponent(
-    `🎂🎈 Surprise! A special 3D Birthday Gift has been crafted just for you, ${wish.recipientName}! ✨\n\n` +
+    `${greetingEmoji} Surprise! A special 3D ${occasionTitle} Gift has been crafted just for you, ${wish.recipientName}! ✨\n\n` +
     `🎁 Open your 3D gift box before it expires in 24 hours:\n` +
     `${shareUrl}\n\n` +
     `With love from ${wish.senderName} ❤️`

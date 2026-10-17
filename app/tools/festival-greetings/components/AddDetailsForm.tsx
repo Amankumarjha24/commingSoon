@@ -108,7 +108,7 @@ export const AddDetailsForm: React.FC<AddDetailsFormProps> = ({
     };
 
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://toolsfortoolsbackend.onrender.com';
       const response = await fetch(`${apiUrl}/api/greetings`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

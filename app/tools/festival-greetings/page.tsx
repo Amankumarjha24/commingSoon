@@ -32,44 +32,65 @@ export default function App() {
     const parseUrl = async () => {
       const urlParams = new URLSearchParams(window.location.search);
       const wishId = urlParams.get('w');
+      const paramD = urlParams.get('d');
       const hash = window.location.hash;
 
-      // 1. Try decoding fallback hash if present (#d=...)
-      if (hash && hash.includes('d=')) {
+      // Helper to decode Base64 URL payload
+      const decodePayload = (encodedStr: string): BirthdayWish | null => {
         try {
-          const encodedStr = hash.split('d=')[1];
-          if (encodedStr) {
-            const rawJson = decodeURIComponent(escape(atob(decodeURIComponent(encodedStr))));
-            const parsed = JSON.parse(rawJson);
-            const recoveredWish: BirthdayWish = {
-              id: wishId || 'shared-wish',
-              recipientName: parsed.r || 'Friend',
-              senderName: parsed.s || 'Someone special',
-              age: parsed.a,
-              message: parsed.m || 'Happy Birthday!',
-              character: parsed.c || 'bear',
-              theme: parsed.t || 'candy',
-              surpriseType: parsed.st || 'cake',
-              voucherText: parsed.v,
-              musicTheme: parsed.mt || 'cheerful',
-              createdAt: parsed.exp ? parsed.exp - 24 * 60 * 60 * 1000 : Date.now(),
-              expiresAt: parsed.exp || Date.now() + 24 * 60 * 60 * 1000,
-            };
-            setCurrentWish(recoveredWish);
-            setView('recipient');
-            return;
-          }
+          const rawJson = decodeURIComponent(escape(atob(decodeURIComponent(encodedStr))));
+          const parsed = JSON.parse(rawJson);
+          return {
+            id: wishId || 'shared-wish',
+            recipientName: parsed.r || 'Friend',
+            senderName: parsed.s || 'Someone special',
+            age: parsed.a,
+            occasion: parsed.o || 'Birthday',
+            message: parsed.m || 'Happy Birthday!',
+            character: parsed.c || 'bear',
+            theme: parsed.t || 'candy',
+            surpriseType: parsed.st || 'cake',
+            voucherText: parsed.v,
+            musicTheme: parsed.mt || 'cheerful',
+            createdAt: parsed.exp ? parsed.exp - 24 * 60 * 60 * 1000 : Date.now(),
+            expiresAt: parsed.exp || Date.now() + 24 * 60 * 60 * 1000,
+          };
         } catch (e) {
-          console.warn('Failed to parse hash payload:', e);
+          console.warn('Failed to parse payload:', e);
+          return null;
+        }
+      };
+
+      // 1. Instant Client-Side Decode from URL hash or query param (Zero wait time!)
+      let clientWish: BirthdayWish | null = null;
+      if (hash && hash.includes('d=')) {
+        const encodedStr = hash.split('d=')[1];
+        if (encodedStr) {
+          clientWish = decodePayload(encodedStr);
+        }
+      } else if (paramD) {
+        clientWish = decodePayload(paramD);
+      }
+
+      if (clientWish) {
+        setCurrentWish(clientWish);
+        setView('recipient');
+        // If it was an offline/local ID, we are already 100% loaded!
+        if (!wishId || wishId.startsWith('local-')) {
+          return;
         }
       }
 
-      // 2. Try fetching from server API
-      if (wishId) {
-        setIsLoadingWish(true);
+      // 2. Try fetching from server API if wishId is present
+      if (wishId && !wishId.startsWith('local-')) {
+        if (!clientWish) {
+          setIsLoadingWish(true);
+        }
         try {
-          const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
-          const res = await fetch(`${apiUrl}/api/greetings/${wishId}`);
+          const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'https://toolsfortoolsbackend.onrender.com';
+          const res = await fetch(`${apiUrl}/api/greetings/${wishId}`, {
+            signal: AbortSignal.timeout(8000),
+          });
           if (res.ok) {
             const data = await res.json();
             if (data.wish) {
