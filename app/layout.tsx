@@ -4,7 +4,6 @@ import styles from './layout.module.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import PrivacyTrustModal from '@/components/PrivacyTrustModal';
-import FestivalPromoBanner from '@/components/FestivalPromoBanner';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://toolsfortools.in';
 
@@ -81,7 +80,6 @@ export default function RootLayout({
       </head>
       <body className={styles.body}>
         <Navbar />
-        <FestivalPromoBanner />
         <main className={styles.main}>
           {children}
         </main>
