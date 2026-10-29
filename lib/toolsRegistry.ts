@@ -293,6 +293,19 @@ export const TOOLS: Tool[] = [
     iconColor: 'text-amber-500',
   },
 
+  {
+    slug: 'audio-trimmer',
+    name: 'Audio Cutter & MP3 Trimmer',
+    description: 'Cut MP3, WAV, AAC, and songs online for free. Interactive waveform scrubber, millisecond precision, instant playback, zero server upload.',
+    shortDesc: 'Cut & trim MP3, WAV and songs online',
+    category: 'video',
+    icon: '🎵',
+    badge: 'new',
+    badgeColor: 'blue',
+    bgColor: 'bg-violet-50',
+    iconColor: 'text-violet-500',
+  },
+
   // 4. Dev, Text & Data Suite
   {
     slug: 'data-format-converter',

@@ -780,5 +780,35 @@ export const TOOLS_SEO_DATA: Record<string, ToolSeoData> = {
       { slug: 'meme-maker', name: 'Meme Maker', shortDesc: 'Make funny celebratory memes.' },
       { slug: 'combine-images-collage', name: 'Combine Images Collage', shortDesc: 'Create a photo collage.' }
     ]
+  },
+  'audio-trimmer': {
+    slug: 'audio-trimmer',
+    toolName: 'Audio Cutter & MP3 Trimmer',
+    category: 'video',
+    categoryLabel: 'Video & Audio',
+    steps: [
+      { stepNumber: 1, title: 'Upload Audio File', desc: 'Select or drag any MP3, WAV, AAC, M4A, OGG, or FLAC audio file from your device.' },
+      { stepNumber: 2, title: 'Set Start & End Cut Points', desc: 'Drag the visual waveform timeline handles or type exact timestamps down to the millisecond to isolate your clip or song chorus.' },
+      { stepNumber: 3, title: 'Preview Trimmed Audio', desc: 'Listen to the trimmed selection with the built-in player. Optionally add a smooth Fade In or Fade Out to prevent audio clicks.' },
+      { stepNumber: 4, title: 'Download Studio-Quality Audio', desc: 'Export your trimmed audio clip directly to your device with 100% private in-browser processing.' }
+    ],
+    constraints: [
+      { label: 'Supported Input Formats', value: 'MP3, WAV, AAC, M4A, OGG, FLAC, WebM Audio' },
+      { label: 'Output Specification', value: 'Uncompressed 16-bit Linear PCM WAV (Stereo/Mono) for studio-grade fidelity' },
+      { label: 'Precision', value: 'Sample-accurate millisecond timeline selection' },
+      { label: 'Privacy & Security', value: '100% In-Browser. Audio files never leave your device or upload to any remote server' }
+    ],
+    faqs: [
+      { q: 'How to cut an audio file or song online for free?', a: 'Upload your MP3 or audio track, drag the waveform handles or type exact start and end times, preview your clip, and click "Trim & Download Audio". The file is processed locally in your browser memory with zero signup required.' },
+      { q: 'Is this audio cutter safe for private recordings and voice notes?', a: 'Yes, 100%. ToolsforTools processes all audio decoding, slicing, and rendering locally on your computer or phone using the Web Audio API. Your audio never touches any remote cloud server or external storage.' },
+      { q: 'Can I make phone ringtones using this MP3 cutter?', a: 'Yes! You can isolate a 20-30 second chorus from any song, enable smooth Fade In / Fade Out so the ringtone starts and ends naturally, and export it directly to your phone.' },
+      { q: 'Does trimming reduce audio quality or add compression artifacts?', a: 'No. The audio is decoded into raw PCM and exported as an uncompressed 16-bit PCM WAV file. This eliminates generational audio degradation caused by lossy MP3 re-encoding.' },
+      { q: 'What is the maximum file size supported?', a: 'Standard songs and voice recordings up to 100MB are supported smoothly. Because processing happens in your device browser RAM, larger multi-hour recordings may depend on available device memory.' }
+    ],
+    relatedTools: [
+      { slug: 'video-to-audio-extractor', name: 'Video to Audio Extractor', shortDesc: 'Extract MP3 or WAV audio tracks from MP4 and WebM videos.' },
+      { slug: 'trim-video', name: 'Video Trimmer & Cutter', shortDesc: 'Cut and trim video timelines with frame-accurate preview.' },
+      { slug: 'mute-video', name: 'Mute Video (Remove Sound)', shortDesc: 'Strip audio tracks from video files in one click.' }
+    ]
   }
 };
