@@ -5,6 +5,23 @@ import { TOOLS_SEO_DATA } from '@/lib/toolsSeoData';
 export const metadata: Metadata = {
   title: 'Unlock PDF Online Free — Remove PDF Password & Restrictions',
   description: 'Unlock PDF online free. Remove known passwords and permission restrictions from PDF files instantly in your browser with 100% security.',
+  keywords: [
+    'unlock pdf',
+    'unlock pdf online',
+    'unlock pdf online free',
+    'remove password from pdf',
+    'pdf password remover',
+    'remove pdf restrictions online',
+    'unlock protected pdf',
+    'pdf decrypt online',
+    'how to unlock pdf without password',
+    'remove print lock from pdf',
+    'strip pdf password permanently',
+    'free pdf unlocker client side',
+    'remove pdf copy protection',
+    'unlock secured pdf',
+    'pdf permissions remover',
+  ],
   alternates: {
     canonical: 'https://toolsfortools.in/tools/unlock-pdf',
   },

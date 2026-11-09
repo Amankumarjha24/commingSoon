@@ -103,7 +103,7 @@ export const TOOLS: Tool[] = [
   {
     slug: 'unlock-pdf',
     name: 'Unlock PDF (Remove Password)',
-    description: 'Remove password restrictions from encrypted PDF documents and save restriction-free copies in seconds with zero cloud uploads.',
+    description: 'Remove password restrictions from encrypted PDF documents and save restriction-free copies in seconds with zero cloud uploads. Unlock PDF online free, decrypt password-protected files, remove print & copy restrictions, and permanently strip PDF passwords with 100% in-browser privacy.',
     shortDesc: 'Remove PDF password & restrictions',
     category: 'pdf',
     icon: '🔓',

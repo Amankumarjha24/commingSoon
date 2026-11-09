@@ -106,7 +106,11 @@ export const TOOLS_SEO_DATA: Record<string, ToolSeoData> = {
       { label: 'Zero Uploads', value: 'Decryption happens 100% in your browser' }
     ],
     faqs: [
-      { q: 'Can I unlock a PDF without knowing the password?', a: 'If the PDF only has permission/owner restrictions (e.g. printing or copying disabled), you can unlock it without a password. If the PDF requires a password to open, you must provide the authorized password once to decrypt the file stream.' }
+      { q: 'Can I unlock a PDF without knowing the password?', a: 'If the PDF only has permission/owner restrictions (e.g. printing or copying disabled), you can unlock it without a password. If the PDF requires a password to open, you must provide the authorized password once to decrypt the file stream.' },
+      { q: 'How to unlock a PDF online free permanently?', a: 'Upload your password-protected PDF into our free online PDF unlocker. Enter the authorized password once to decrypt the stream. Our client-side engine reconstructs a clean, unencrypted PDF copy that will never prompt for a password again in Chrome, Adobe Acrobat, or any PDF viewer.' },
+      { q: 'How can I remove print, edit, and copy restrictions without a password?', a: 'If a PDF allows viewing but prevents printing, text copying, or editing, it is protected with owner permission flags. Our PDF unlocker automatically strips these permission restrictions in-browser without needing an open password.' },
+      { q: 'Why did my unlocked PDF previously still ask for a password?', a: 'Basic tools often resave the file without deleting the underlying /Encrypt trailer dictionary, leaving password handlers intact. ToolsforTools completely rebuilds an unrestricted document tree, permanently eradicating password prompts and security locks.' },
+      { q: 'Is it safe to unlock confidential PDFs using ToolsforTools?', a: 'Yes, 100%. All decryption algorithms run entirely inside your browser memory using local WebAssembly. Your confidential documents, bank statements, salary slips, and contracts are never uploaded to any remote server or third-party cloud.' }
     ],
     relatedTools: [
       { slug: 'protect-pdf', name: 'Protect PDF', shortDesc: 'Encrypt PDFs with strong AES-256 passwords.' },
