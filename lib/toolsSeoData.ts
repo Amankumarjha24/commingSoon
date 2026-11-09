@@ -810,5 +810,38 @@ export const TOOLS_SEO_DATA: Record<string, ToolSeoData> = {
       { slug: 'trim-video', name: 'Video Trimmer & Cutter', shortDesc: 'Cut and trim video timelines with frame-accurate preview.' },
       { slug: 'mute-video', name: 'Mute Video (Remove Sound)', shortDesc: 'Strip audio tracks from video files in one click.' }
     ]
+  },
+  'video-geotag-changer': {
+    slug: 'video-geotag-changer',
+    toolName: 'Video Geo Tag Changer & GPS Location Editor',
+    category: 'video',
+    categoryLabel: 'Video & Audio',
+    steps: [
+      { stepNumber: 1, title: 'Upload MP4 or MOV Video', desc: 'Select or drag your video file into our video geotagger. The tool detects the container format and inspects any existing GPS metadata.' },
+      { stepNumber: 2, title: 'Enter GPS Coordinates', desc: 'Type decimal Latitude and Longitude to add location to video, or click "Use Current Location" or choose from popular city presets.' },
+      { stepNumber: 3, title: 'Customize Settings & Name', desc: 'Optionally set altitude or review recognized ISO 6709 location coordinates in this video geo tag changer, and give your output video a custom filename.' },
+      { stepNumber: 4, title: 'Apply & Download with Verified GPS', desc: 'Our client-side MP4 geotag editor injects genuine ISO 6709 location atoms (moov.udta.©xyz) directly into the video container with zero re-encoding and zero server uploads.' }
+    ],
+    constraints: [
+      { label: 'Supported Video Formats', value: 'MP4, QuickTime MOV, M4V (ISO BMFF containers)' },
+      { label: 'GPS Location Standards', value: 'ISO 6709 Coordinate String (moov.udta.©xyz) & QuickTime location metadata' },
+      { label: 'Stream Integrity', value: '100% Lossless (Audio & Video streams remain bit-for-bit identical with no re-encoding)' },
+      { label: 'Privacy & Security', value: '100% Client-Side. Videos and GPS coordinates never leave your device or upload to any cloud server' }
+    ],
+    faqs: [
+      { q: 'How do I geotag a video online free?', a: 'To geotag video online free, select your MP4 or MOV file in our video geotagger, input your desired latitude and longitude coordinates, and click "Apply & Embed Video GPS Metadata". The tool embeds the coordinates into the video container locally in your browser so you can download the updated video immediately.' },
+      { q: 'Can I add GPS coordinates to an MP4 video without re-encoding?', a: 'Yes. Our MP4 geotag editor directly updates the container metadata atom (moov.udta.©xyz) and adjusts chunk offset tables (stco/co64) without touching the video or audio streams. Your video quality, resolution, frame rate, and audio tracks remain 100% untouched and lossless.' },
+      { q: 'How can I change video location metadata or remove existing coordinates?', a: 'When you upload a video, our video location editor reads and displays any existing GPS coordinates. You can type new coordinates to change video location metadata, or click "Remove Location Metadata" to strip existing geotags completely.' },
+      { q: 'Does geotagging change what appears in the video itself?', a: 'No. Video geotagging edits the internal container metadata rather than overlaying visual text on top of the video frames. The visible video picture remains completely unchanged, but map viewers, photo apps, and cataloging software can read its real-world recording location.' },
+      { q: 'How do I verify GPS metadata after downloading?', a: 'Our video geotagging tool includes automated independent verification that reads back the exported video and provides a direct Google Maps link. You can also verify the downloaded file using media inspectors like VLC, QuickTime Player, or ExifTool.' },
+      { q: 'Why does my video not show location information?', a: 'If your camera or smartphone had location services disabled during recording, the video file was saved without GPS metadata. Using this video GPS metadata editor, you can add GPS coordinates to video files that originally had no location tags.' },
+      { q: 'Does video geotagging improve Google Search rankings?', a: 'While video location metadata helps cataloging applications, video platforms, and map software identify recording coordinates, it does not guarantee higher Google search ranking on its own. Quality content, clear schema, and descriptive metadata work together.' },
+      { q: 'Are my private videos uploaded to any server?', a: 'Never. ToolsforTools processes all container parsing and metadata editing entirely inside your local browser memory using modern Web APIs. Your videos are never uploaded to any cloud server or third-party database.' }
+    ],
+    relatedTools: [
+      { slug: 'geo-tag-changer', name: 'Photo Geo Tag Changer', shortDesc: 'Add or change GPS EXIF metadata in photos & images.' },
+      { slug: 'trim-video', name: 'Video Trimmer & Cutter', shortDesc: 'Cut and trim video timelines with frame-accurate preview.' },
+      { slug: 'mute-video', name: 'Mute Video (Remove Sound)', shortDesc: 'Strip audio tracks from video files in one click.' }
+    ]
   }
 };

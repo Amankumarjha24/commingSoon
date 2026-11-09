@@ -403,6 +403,18 @@ export const TOOLS: Tool[] = [
     bgColor: 'bg-pink-50',
     iconColor: 'text-pink-500',
   },
+  {
+    slug: 'video-geotag-changer',
+    name: 'Video Geo Tag Changer',
+    description: 'Geotag videos online free. Add or change GPS location coordinates (Latitude & Longitude) in MP4 and MOV videos without re-encoding. 100% private in your browser.',
+    shortDesc: 'Add or change GPS location in videos',
+    category: 'video',
+    icon: '📍',
+    badge: 'new',
+    badgeColor: 'blue',
+    bgColor: 'bg-rose-50',
+    iconColor: 'text-rose-500',
+  },
 ];
 
 export const CATEGORIES = [
