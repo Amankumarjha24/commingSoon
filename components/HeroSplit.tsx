@@ -16,6 +16,13 @@ export default function HeroSplit() {
       bgLightClass: styles.toolIcon_bg_emerald_50_text_emerald_600,
     },
     {
+      name: 'Video Geo Tag Changer',
+      sub: 'Add or change GPS location in videos',
+      slug: 'video-geotag-changer',
+      icon: '📍',
+      bgLightClass: styles.toolIcon_bg_red_50_text_red_600,
+    },
+    {
       name: 'Photopea Studio',
       sub: 'PSD, XCF, RAW, PNG, JPG editing',
       slug: 'photopea-editor',
